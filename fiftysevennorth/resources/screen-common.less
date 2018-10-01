@@ -2,12 +2,45 @@
 
 @import "variables.less";
 
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic');
+
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
 // Page layout
 
 #mw-wrapper{
 	width: 100%;
 }
 
+#mw-header{
+	height: 140px;
+	background-color: @darkblue;
+	color: @light;
+}
+
+#p-logo {
+	display: inline-block;
+}
+
+.mw-wiki-logo{
+	height: 140px;
+	width: 290px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: 10px 30px;
+}
+#p-banner{
+	float: left;
+	color: @light;
+}
+
+#mw-header-menu{
+	height: 50px;
+	background-color: @medblue;
+}
 
 
 .mw-body {
@@ -18,6 +51,5 @@
 }
 
 
-.mw-wiki-logo{
-	background-image: url("/skins/fiftysevennorth/resources/images/logo.png");
-}
+
+

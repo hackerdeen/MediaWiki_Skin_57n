@@ -49,16 +49,12 @@ class fiftysevennorthTemplate extends BaseTemplate {
 				)
 			) .
 
-			
-
 			Html::rawElement( 'div', [ 'id' => 'mw-header' ],
-				Html::rawElement(
-					'h2',
-					[],
-					$this->getMsg( 'navigation-heading' )->parse()
-				) .
 				$this->getLogo() .
-				$this->getSearch() .
+				$this->getSearch() 
+			) .
+
+			Html::rawElement( 'div', [ 'id' => 'mw-header-menu' ],
 				// User profile links
 				Html::rawElement(
 					'div',
