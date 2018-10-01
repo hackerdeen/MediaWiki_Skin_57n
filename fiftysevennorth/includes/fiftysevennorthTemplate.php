@@ -68,7 +68,6 @@ class fiftysevennorthTemplate extends BaseTemplate {
 					$this->getPageLinks()
 				)
 			) .
-
 			Html::rawElement( 'div', [ 'id' => 'mw-side' ],
 				// Site navigation/sidebar
 				Html::rawElement(

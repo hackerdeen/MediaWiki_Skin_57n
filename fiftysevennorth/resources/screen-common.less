@@ -7,6 +7,7 @@
 
 body {
 	font-family: 'Lato', sans-serif;
+	height: 100%;
 }
 
 // Page layout
@@ -30,17 +31,109 @@ body {
 	width: 290px;
 	float: left;
 	background-repeat: no-repeat;
-	background-position: 10px 30px;
+	background-position: 10px 25px;
 }
 #p-banner{
 	float: left;
 	color: @light;
+	margin: 0;
+	padding: 60px 0px 0px 20px;
+}
+#p-banner:hover{
+	text-decoration: none;
 }
 
+#p-search{
+	float: right;
+	margin: 5px 10px 0px 0px;
+}
+#p-search h3{
+	color: @light;
+	font-size: 100%;
+	font-weight: normal;
+	display: inline-block;
+	margin: 15px 10px -5px 0px;
+	padding: 3px;
+}
+#p-search input{
+	display: inline-block;
+	margin: 3px;
+	padding: 3px;
+}
+
+
 #mw-header-menu{
-	height: 50px;
+	min-height: 50px;
+	overflow: auto;
 	background-color: @medblue;
 }
+
+#user-tools{
+	float: left;
+}
+
+#page-tools{
+	float: right;
+}
+
+
+#mw-header-menu h3{
+    display: none;
+}
+
+#mw-header-menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#mw-header-menu li {
+    float: left;
+}
+#mw-header-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+#mw-side {
+	width: 300px;
+}
+
+
+#site-navigation > div {
+	margin: 10px;
+	padding: 0px;
+	border: 1px solid #ddd;
+}
+#site-navigation > div > div {
+	margin: 0px;
+	padding: 10px;
+
+}
+
+#site-navigation h3 {
+	background-color: @medblue;
+	color: @light;	
+	font-weight: normal;
+	padding: 5px 5px 5px 5px;
+}
+#site-navigation ul{
+    list-style-type: none;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#site-navigation li {
+	float: left;
+	margin: 0;
+	padding: 0px 0px 5px 0px;
+	width: 100%;
+}
+
 
 
 .mw-body {
@@ -50,6 +143,34 @@ body {
 	width: auto;
 }
 
+#mw-body:after {
+	content: "";
+	display: block;
+}
 
-
-
+#footer-bottom{
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	background-color: @darkblue;
+	color: @light;	
+}
+#footer-bottom a{
+	color: @light;	
+} 
+#f-poweredbyico{
+	float: right;
+	margin: 0;
+	padding: 10px;
+}
+#footer-bottom ul{
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+#footer-bottom li {
+	float: left;
+	margin: 0;
+	padding: 0px 20px 0px 0px;
+}
