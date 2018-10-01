@@ -1,0 +1,46 @@
+/* Styles appear on displays 750 pixels wide and below */
+#p-logo {
+  width: 6em;
+}
+#p-logo a.mw-wiki-logo {
+  margin: 0 0 1em 1em;
+  width: 5em;
+  height: 5em;
+  background-size: contain;
+}
+#p-banner {
+  display: none;
+}
+div.thumb {
+  float: none;
+}
+.thumb {
+  width: 100%;
+  margin: 1em auto;
+}
+div.tright {
+  margin-left: 0;
+}
+div.tright .thumbinner {
+  padding-left: 0;
+}
+div.tleft {
+  margin-right: 0;
+}
+div.tleft .thumbinner {
+  padding-right: 0;
+}
+.thumbinner {
+  width: 100% !important;
+}
+.thumbimage {
+  display: block;
+  margin: 0 auto 0.5em;
+}
+.mw-body-content a > img {
+  height: auto !important;
+  max-width: 100% !important;
+}
+.nomobile {
+  display: none;
+}

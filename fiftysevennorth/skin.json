@@ -1,0 +1,54 @@
+{
+	"name": "fiftysevennorth",
+	"version": "1.0",
+	"author": "Andy Gaskell",
+	"url": "https://github.com/hackerdeen/MediaWiki_Skin_57n",
+	"descriptionmsg": "This is a MediaWiki skin for the 57 North Hackspace",
+	"namemsg": "skinname-fiftysevennorth",
+	"license-name": "CC0-1.0",
+	"type": "skin",
+	"ValidSkinNames": {
+		"fiftysevennorth": "fiftysevennorth"
+	},
+	"MessagesDirs": {
+		"fiftysevennorth": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.fiftysevennorth": {
+			"class": "ResourceLoaderSkinModule",
+			"styles": {
+				"resources/libraries/normalise.css": {
+					"media": "screen"
+				},
+				"resources/screen-common.less": {
+					"media": "screen"
+				},
+				"resources/screen-desktop.less": {
+					"media": "screen and (min-width: 751px)"
+				},
+				"resources/screen-mobile.less": {
+					"media": "screen and (max-width: 750px)"
+				},
+				"resources/print.css": {
+					"media": "print"
+				}
+			}
+		},
+		"skins.fiftysevennorth.js": {
+			"scripts": [
+				"resources/main.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "57n"
+	},
+	"AutoloadClasses": {
+		"Skinfiftysevennorth": "includes/Skinfiftysevennorth.php",
+		"fiftysevennorthTemplate": "includes/fiftysevennorthTemplate.php"
+	},
+	"manifest_version": 1
+}

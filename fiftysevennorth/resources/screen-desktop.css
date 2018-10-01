@@ -1,0 +1,9 @@
+/* Styles appear on displays over 750 pixels wide */
+#site-navigation ul {
+  list-style-type: none;
+  margin: 0;
+}
+#site-navigation li {
+  padding-right: 1em;
+  display: inline-block;
+}
