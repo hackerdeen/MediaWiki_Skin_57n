@@ -48,7 +48,10 @@ class fiftysevennorthTemplate extends BaseTemplate {
 					$this->get( 'debughtml' )
 				)
 			) .
-			Html::rawElement( 'div', [ 'id' => 'mw-navigation' ],
+
+			
+
+			Html::rawElement( 'div', [ 'id' => 'mw-header' ],
 				Html::rawElement(
 					'h2',
 					[],
@@ -67,7 +70,10 @@ class fiftysevennorthTemplate extends BaseTemplate {
 					'div',
 					[ 'id' => 'page-tools' ],
 					$this->getPageLinks()
-				) .
+				)
+			) .
+
+			Html::rawElement( 'div', [ 'id' => 'mw-side' ],
 				// Site navigation/sidebar
 				Html::rawElement(
 					'div',
@@ -75,6 +81,7 @@ class fiftysevennorthTemplate extends BaseTemplate {
 					$this->getSiteNavigation()
 				)
 			) .
+
 			$this->getFooter()
 		);
 
