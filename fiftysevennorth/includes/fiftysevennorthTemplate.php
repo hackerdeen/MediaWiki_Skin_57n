@@ -14,7 +14,9 @@ class fiftysevennorthTemplate extends BaseTemplate {
 
 		/* this section makes up the HTML of the template */
 
-
+		$html .="\n\n<!--\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+		$html .= "If you spot any issues or problems with this wiki or skin, please create an issue on GitHub at https://github.com/hackerdeen/MediaWiki_Skin_57n/issues thank you :) ";
+		$html .="\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n-->\n\n";
 
 		$html .= 
 		Html::rawElement( 'div', [ 'id' => 'mw-wrapper' ],
@@ -90,9 +92,8 @@ class fiftysevennorthTemplate extends BaseTemplate {
 						$this->get( 'debughtml' )
 					)
 				)
-			) 	.
-			$this->getFooter() 
-			
+			) 	. 
+			$this->getFooter()
 		);
 		
 		#$html .= $this->getFooter();
