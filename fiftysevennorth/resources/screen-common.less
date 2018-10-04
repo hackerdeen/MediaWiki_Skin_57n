@@ -75,6 +75,10 @@ body {
 #page-tools{
 	float: right;
 }
+#page-tools > div{
+	float: right;
+}
+
 
 
 #mw-header-menu h3{
@@ -164,10 +168,20 @@ body {
     list-style-type: none;
     margin: 10px;
     padding: 0;
-    overflow: hidden;
+	overflow: hidden;
+	display: inline-block;
 }
 #footer-bottom li {
 	float: left;
 	margin: 0;
 	padding: 0px 20px 0px 0px;
+}
+
+
+/* components */
+.mw-ui-vform {
+	clear: none;
+}
+#editform, #toolbar, #wpTextbox1 {
+    clear: none;
 }
