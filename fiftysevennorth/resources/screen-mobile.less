@@ -1,17 +1,22 @@
 /* Styles appear on displays 750 pixels wide and below */
 
-// @import "variables.less"; (Not used here)
+@import "variables.less"; 
 
 #p-logo {
-	width: 6em;
+	width: 100%;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 
 	// Make the logo smaller because we're dealing with less space here
 	// Note that background-size doesn't necessarily work in older browsers, but whatever
 	a.mw-wiki-logo {
-		margin: 0 0 1em 1em;
-		width: 5em;
-		height: 5em;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		width: 100%;		
+		height: 50px;
+
 		background-size: contain;
+		background-position: 10px 5px ;
 	}
 }
 #p-banner {
@@ -56,4 +61,48 @@ div.tleft {
 
 .nomobile {
 	display: none;
+}
+
+
+#mw-header{
+	height: 55px;
+}
+#mw-header-menu{
+	display: none;
+}
+#user-tools{
+	display:none;
+}
+#page-tools{
+	display:none;
+}
+#p-search{
+    display:none;
+}
+#mw-side{
+	display: none;
+}
+.mw-body{
+	margin-left: 0;
+}
+#mw-header-menu-mobile{
+	display: inline;
+}
+#mw-header-menu-mobile #user-tools,
+#mw-header-menu-mobile #page-tools{
+	display: inline;
+}
+
+#mw-header-menu-mobile{
+	background-color: @darkblue;
+	color: @light;
+}
+
+#mw-header-menu-mobile a,
+#mw-header-menu-mobile h3{
+	color: #fff;
+}
+
+#mw-header-menu-mobile > div{
+	display: inline-block;
 }

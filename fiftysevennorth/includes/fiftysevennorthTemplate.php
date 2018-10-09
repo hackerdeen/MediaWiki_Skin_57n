@@ -93,57 +93,7 @@ class fiftysevennorthTemplate extends BaseTemplate {
 					)
 				)
 			) 	. 
-			$this->getFooter()
-		);
-		
-		#$html .= $this->getFooter();
-		$html .= $this->getTrail();
-		$html .= Html::closeElement( 'body' );
-		$html .= Html::closeElement( 'html' );		
-
-		/*
-		$html .= 
-			Html::rawElement( 'div', [ 'id' => 'mw-wrapper' ],
-			Html::rawElement( 'div', [ 'class' => 'mw-body', 'role' => 'main' ],
-				$this->getSiteNotice() .
-				$this->getNewTalk() .
-				$this->getIndicators() .
-				Html::rawElement( 'h1',
-					[
-						'class' => 'firstHeading',
-						'lang' => $this->get( 'pageLanguage' )
-					],
-					$this->get( 'title' )
-				) .
-				Html::rawElement( 'div', [ 'id' => 'siteSub' ],
-					$this->getMsg( 'tagline' )->parse()
-				) .
-				Html::rawElement( 'div', [ 'class' => 'mw-body-content' ],
-					Html::rawElement( 'div', [ 'id' => 'contentSub' ],
-						$this->getPageSubtitle() .
-						Html::rawElement(
-							'p',
-							[],
-							$this->get( 'undelete' )
-						)
-					) .
-					$this->get( 'bodycontent' ) .
-					$this->getClear() .
-					Html::rawElement( 'div', [ 'class' => 'printfooter' ],
-						$this->get( 'printfooter' )
-					) .
-					$this->getCategoryLinks() .
-					$this->getDataAfterContent() .
-					$this->get( 'debughtml' )
-				)
-			) .
-
-			Html::rawElement( 'div', [ 'id' => 'mw-header' ],
-				$this->getLogo() .
-				$this->getSearch() 
-			) .
-
-			Html::rawElement( 'div', [ 'id' => 'mw-header-menu' ],
+			Html::rawElement( 'div', [ 'id' => 'mw-header-menu-mobile' ],
 				// User profile links
 				Html::rawElement(
 					'div',
@@ -157,22 +107,13 @@ class fiftysevennorthTemplate extends BaseTemplate {
 					$this->getPageLinks()
 				)
 			) .
-			Html::rawElement( 'div', [ 'id' => 'mw-side' ],
-				// Site navigation/sidebar
-				Html::rawElement(
-					'div',
-					[ 'id' => 'site-navigation' ],
-					$this->getSiteNavigation()
-				)
-			) .
-
 			$this->getFooter()
 		);
 
 		$html .= $this->getTrail();
 		$html .= Html::closeElement( 'body' );
-		$html .= Html::closeElement( 'html' );
-		*/
+		$html .= Html::closeElement( 'html' );		
+
 		echo $html;
 	}
 
