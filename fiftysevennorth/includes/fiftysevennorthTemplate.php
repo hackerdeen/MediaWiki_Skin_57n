@@ -111,7 +111,7 @@ class fiftysevennorthTemplate extends BaseTemplate {
 			$this->getFooter() .
 			// Page editing and tools
 			"<div class=\"subfooter\">
-			<div class=\"subfooter_left\">Media wiki template for <a href=\"https://57north.org.uk/\" title=\"57north Hackspace\">57North</a> see <a href=\"https://github.com/hackerdeen/MediaWiki_Skin_57n\" title=\"Code for this skin on GitHub\">GitHub</a> for the code.</div>
+			<div class=\"subfooter_left\">Media wiki template for <a href=\"https://57north.org.uk/\" title=\"57north Hackspace\">57North</a> see <a href=\"https://github.com/hackerdeen/MediaWiki_Skin_57n\" title=\"Code for this skin on GitHub\"  target=\"_blank\">GitHub</a> for the code.</div>
 			<div class=\"subfooter_right\">GNU General Public License v3.0. " . date('l jS \of F Y g:i a') . "</div>
 			</div>"
 		);
