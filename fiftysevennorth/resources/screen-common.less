@@ -62,6 +62,30 @@ body {
 }
 
 
+.header_icons{
+	float: right;
+	clear: both;
+	margin: 10px 15px 0px 0px;
+}
+
+.header_icons a {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin: 5px 2px 0px 2px;
+	border-radius: 15px;
+	color: @darkblue;
+	background-color: @light;
+	text-align: center;
+	font-weight: bold;
+	transition: background-color 1s;
+}
+.header_icons a:hover {
+	text-decoration: none;
+	background-color: @medblue;
+}
+
+
 #mw-header-menu{
 	min-height: 50px;
 	overflow: auto;
@@ -164,6 +188,7 @@ a.new {
 	width: 100%;
 	background-color: @darkblue;
 	color: @light;	
+	margin: 20px 0 0 0;
 }
 #footer-bottom a{
 	color: @light;	
@@ -193,4 +218,24 @@ a.new {
 }
 #editform, #toolbar, #wpTextbox1 {
     clear: none;
+}
+
+.subfooter{
+	background-color: @darkblue;
+	color: @light;
+	margin: 0;
+	padding: 0px 10px 5px 10px;
+	font-size: 50%;
+	overflow: hidden;
+}
+.subfooter_left{
+	text-align: left;
+	float: left;
+}
+.subfooter_right{
+	text-align: right;
+	float: right;
+}
+.subfooter a{
+	color: @light;
 }

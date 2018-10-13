@@ -20,7 +20,11 @@
 	}
 }
 #p-banner {
-	display: none;
+	padding: 0;
+	position: absolute;
+	top: 19px;
+	right: 5px;
+	font-size: 90%;
 }
 
 // Full-width thumbnails (to avoid having really squished text around them)
@@ -86,7 +90,7 @@ div.tleft {
 	margin-left: 0;
 }
 #mw-header-menu-mobile{
-	display: inline;
+	display: inline-block;
 }
 #mw-header-menu-mobile #user-tools,
 #mw-header-menu-mobile #page-tools{
@@ -105,4 +109,20 @@ div.tleft {
 
 #mw-header-menu-mobile > div{
 	display: inline-block;
+	width: 100%;
+}
+#mw-header-menu-mobile > div > div{
+	float: none;
+	padding: 5px 10px;
+}
+
+#footer-bottom{
+	margin-top: 0;
+}
+
+.subfooter_left,
+.subfooter_right{
+	text-align: left;
+	float: none;
+	padding-bottom: 10px;
 }

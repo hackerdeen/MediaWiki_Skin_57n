@@ -9,7 +9,7 @@
   background-size: contain;
 }
 #p-banner {
-  display: none;
+  padding: 0px 0px 0px 0px;
 }
 div.thumb {
   float: none;

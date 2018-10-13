@@ -14,8 +14,12 @@ class fiftysevennorthTemplate extends BaseTemplate {
 
 		/* this section makes up the HTML of the template */
 
-		$html .="\n\n<!--\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
-		$html .= "If you spot any issues or problems with this wiki or skin, please create an issue on GitHub at https://github.com/hackerdeen/MediaWiki_Skin_57n/issues thank you :) ";
+		$html .="\n\n";
+		$html .="<!--\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+		$html .= "If you spot any issues or problems with this wiki or \n";
+		$html .= "skin, please create an issue on GitHub at \n";
+		$html .= "https://github.com/hackerdeen/MediaWiki_Skin_57n/issues \n";
+		$html .= "thank you :) ";
 		$html .="\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n-->\n\n";
 
 		$html .= 
@@ -23,7 +27,14 @@ class fiftysevennorthTemplate extends BaseTemplate {
 
 			Html::rawElement( 'div', [ 'id' => 'mw-header' ],
 				$this->getLogo() .
-				$this->getSearch() 
+				$this->getSearch() .
+				"<div class=\"header_icons\">
+					<a href=\"https://57north.org.uk/\" title=\"57north Website\" target=\"_blank\">w</a> 
+					<a href=\"https://twitter.com/57NorthHacklab\" title=\"57north Twitter\" target=\"_blank\">t</a> 
+					<a href=\"https://www.facebook.com/57NorthHacklab/\" title=\"57north Facebook\" target=\"_blank\">f</a> 
+					<a href=\"http://lists.57north.co/listinfo\" title=\"57north Mailing Lists\" target=\"_blank\">e</a>  
+					<a href=\"https://guest.id.57north.org.uk\" title=\"57north Hack Hub\" target=\"_blank\">h</a>  
+				</div>"
 			) .
 
 			Html::rawElement( 'div', [ 'id' => 'mw-header-menu' ],
@@ -40,11 +51,7 @@ class fiftysevennorthTemplate extends BaseTemplate {
 					$this->getPageLinks()
 				)
 			) .
-
-
-
 			Html::rawElement( 'div', [ 'id' => 'mw-main' ],				
-
 				Html::rawElement( 'div', [ 'id' => 'mw-side' ],
 					// Site navigation/sidebar
 					Html::rawElement(
@@ -53,13 +60,7 @@ class fiftysevennorthTemplate extends BaseTemplate {
 						$this->getSiteNavigation()
 					)
 				) .
-
-
-
 				Html::rawElement( 'div', [ 'class' => 'mw-body', 'role' => 'main' ],
-
-
-
 					$this->getSiteNotice() .
 					$this->getNewTalk() .
 					$this->getIndicators() .
@@ -107,7 +108,12 @@ class fiftysevennorthTemplate extends BaseTemplate {
 					$this->getPageLinks()
 				)
 			) .
-			$this->getFooter()
+			$this->getFooter() .
+			// Page editing and tools
+			"<div class=\"subfooter\">
+			<div class=\"subfooter_left\">Media wiki template for <a href=\"https://57north.org.uk/\" title=\"57north Hackspace\">57North</a> see <a href=\"https://github.com/hackerdeen/MediaWiki_Skin_57n\" title=\"Code for this skin on GitHub\">GitHub</a> for the code.</div>
+			<div class=\"subfooter_right\">GNU General Public License v3.0. " . date('l jS \of F Y g:i a') . "</div>
+			</div>"
 		);
 
 		$html .= $this->getTrail();
