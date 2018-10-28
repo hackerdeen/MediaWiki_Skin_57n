@@ -1,5 +1,5 @@
 # MediaWiki Skin 57n
-This is a MediaWiki skin for the hackspace. It lives in GitHub at https://github.com/hackerdeen/MediaWiki_Skin_57n. The wiki is probably online at https://wiki.57north.org.uk/.  Is it targetted at MediaWiki 1.25 and later.  It is based on the example skeleton skin at https://www.mediawiki.org/wiki/Skin:Example .
+This is a MediaWiki skin for the hackspace. It lives in GitHub at https://github.com/hackerdeen/MediaWiki_Skin_57n. The wiki is probably online at https://wiki.57north.org.uk/.  There is a wiki page about the wiki at https://wiki.57north.org.uk/index.php/Projects:Wiki.  Is it targetted at MediaWiki 1.25 and later.  It is based on the example skeleton skin at https://www.mediawiki.org/wiki/Skin:Example .
 
 ## Installing this skin on a live MediaWiki
 1. Get the code `git clone https://github.com/hackerdeen/MediaWiki_Skin_57n.git`
